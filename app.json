@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Savora",
+    "slug": "savora",
+    "scheme": "savora",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.lugonja.savora.rn",
+      "supportsTablet": false,
+      "infoPlist": {
+        "CFBundleLocalizations": ["en", "sr"]
+      }
+    },
+    "android": {
+      "package": "com.lugonja.savora.rn",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "plugins": [
+      "expo-router",
+      "expo-image",
+      "expo-localization",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 120,
+          "backgroundColor": "#FFF7F2",
+          "dark": {
+            "backgroundColor": "#130E17"
+          }
+        }
+      ],
+      "expo-status-bar"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
